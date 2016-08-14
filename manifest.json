@@ -1,0 +1,25 @@
+{
+    "manifest_version": 2,
+    "name": "unvisitify",
+    "version": "0.1.0",
+
+    "applications": {
+        "gecko": {
+            "id": "notapplicable@not.applicable"
+        }
+    },
+
+    "description": "Filters all links from Aftonbladet and Expressen through unvis.it",
+
+    "permissions": [
+        "webRequest", "webRequestBlocking", "storage"
+    ],
+
+    "background": {
+        "scripts": ["unvisitify.js"]
+    },
+
+    "options_ui": {
+        "page":"settings.html"
+    }
+}
